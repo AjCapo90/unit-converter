@@ -1,0 +1,83 @@
+:root {
+  --accent-color: #6943ff;
+  --accent-lighter-color: #5a537b;
+  --lighter-color: #ffffff;
+  --light-color: #f4f4f4;
+  --darker-color: #353535;
+  --primary-font-family: Inter;
+}
+
+@font-face {
+  src: "inter.ttf";
+  font-family: Inter;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font-family);
+  background-color: var(--light-color);
+}
+
+#conversion {
+  color: var(--lighter-color);
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 28px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#unit-input {
+  width: 120px;
+  height: 80px;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  font-size: 58px;
+  color: var(--lighter-color);
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+#convert-btn {
+  width: 120px;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: var(--lighter-color);
+  color: #3d3d3d;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.result {
+  width: 80%;
+  height: 100px;
+  color: var(--accent-lighter-color);
+  background-color: var(--lighter-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.result > * {
+  margin: 5px;
+}
